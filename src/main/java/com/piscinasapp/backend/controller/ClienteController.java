@@ -12,7 +12,7 @@ import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin(origins = {"http://localhost:8100", "*"})
+@CrossOrigin(origins = {"https://piscinas-app.web.app"})
 @RestController
 @RequestMapping("/api/clientes")
 public class ClienteController {
