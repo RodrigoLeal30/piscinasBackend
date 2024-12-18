@@ -1,5 +1,5 @@
 # Etapa 1: Construcción del proyecto
-FROM amazoncorretto:20-alpine-jdk AS build
+FROM maven:3.8.5-amazoncorretto-20 AS build
 WORKDIR /app
 
 # Copia el archivo pom.xml y descarga dependencias para cachear
