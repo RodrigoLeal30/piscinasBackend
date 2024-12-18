@@ -1,6 +1,9 @@
 # Etapa 1: Construcción del proyecto
-FROM maven:3.8.5-amazoncorretto-20 AS build
+FROM amazoncorretto:20-alpine-jdk AS build
 WORKDIR /app
+
+# Instala Maven
+RUN apk add --no-cache maven
 
 # Copia el archivo pom.xml y descarga dependencias para cachear
 COPY pom.xml .
